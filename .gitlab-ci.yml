@@ -1,0 +1,9 @@
+stages:
+  - test
+
+deploy:
+  stage: test
+  script:
+    - ping -c 8.8.8.8
+  tags:
+    - shell
