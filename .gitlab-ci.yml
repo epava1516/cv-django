@@ -5,7 +5,7 @@ deploy:
   stage: test
   script:
     - sudo dnf install -y python3 python3-pip
+    - sudo ln -s /bin/python3.6 /bin/python
     - ls -las /bin/python*
-    - ln -s /bin/python3.6 /bin/python
   tags:
     - shell
