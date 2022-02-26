@@ -7,6 +7,6 @@ deploy:
     - sudo dnf install -y python3 python3-pip
     - sudo ln -s /bin/python3.6 /bin/python
     - ls -las /bin/python*
-    - python -V
+    - "python -V"
   tags:
     - shell
