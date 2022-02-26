@@ -4,6 +4,6 @@ stages:
 deploy:
   stage: test
   script:
-    - ping -c 3 8.8.8.8
+    - dnf install -y python3 python3-pip
   tags:
     - shell
