@@ -4,6 +4,6 @@ stages:
 deploy:
   stage: test
   script:
-    - dnf install -y python3 python3-pip
+    - sudo dnf install -y python3 python3-pip
   tags:
     - shell
