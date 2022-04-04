@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    {% include "head.html" %}
+</head>
+<body>	
+    <article class="resume-wrapper text-center position-relative">
+        <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
+            <header class="resume-header pt-4 pt-md-0">
+                <div class="row">
+                    <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+                        {% comment %} <img class="picture" src="{% static 'assets/images/profile.jpg' %}" alt=""> {% endcomment %}
+                    </div><!--//col-->
+
+                    <div class="col">
+                        <div class="row p-4 justify-content-center justify-content-md-between">
+                            {% include 'info.html' %}
+                        </div><!--//row-->
+                    </div><!--//col-->
+
+                </div><!--//row-->
+            </header>
+            <div class="resume-body p-5">
+                {% include 'summary.html' %}
+                <div class="row">
+                    <div class="col-lg-9">
+                        <section class="resume-section experience-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
+                            <div class="resume-section-content">
+                                <div class="resume-timeline position-relative">
+                                    {% include 'experience.html' %}
+                                </div><!--//resume-timeline-->
+                            </div>
+                        </section><!--//experience-section-->
+                    </div>
+
+                    <div class="col-lg-3">
+                        <section class="resume-section skills-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
+                            <div class="resume-section-content">
+                                {% include 'skills.html' %}
+                            </div><!--resume-section-content-->
+                        </section><!--//skills-section-->
+
+                        <section class="resume-section education-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+                            <div class="resume-section-content">
+                                {% include 'education.html' %}
+                            </div>
+                        </section><!--//education-section-->
+
+                        {% comment %} <section class="resume-section reference-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
+                            <div class="resume-section-content">
+                                {% include 'awards.html' %}
+                            </div>
+                        </section><!--//awards-section--> {% endcomment %}
+
+                        <section class="resume-section language-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
+                            <div class="resume-section-content">
+                                {% include 'languages.html' %}
+                            </div>
+                        </section><!--//language-section-->
+
+                        <section class="resume-section interests-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
+                            <div class="resume-section-content">
+                                {% include 'interests.html' %}
+                            </div>
+                        </section><!--//interests-section-->
+
+                    </div>
+                </div><!--//row-->
+            </div><!--//resume-body-->
+        </div>
+    </article> 
+
+    <footer class="footer text-center pt-2 pb-5">
+	    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+        <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+    </footer>
+
+</body>
+</html> 
+

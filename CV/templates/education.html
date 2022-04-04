@@ -1,0 +1,9 @@
+<ul class="list-unstyled">
+    {% for study in education %}
+    <li class="mb-2">
+        <div class="resume-degree font-weight-bold">{{ study.title }}</div>
+        <div class="resume-degree-org">{{ study.organization }}</div>
+        <div class="resume-degree-time">{{ study.starts }} - {{ study.ends }}</div>
+    </li>
+    {% endfor %}
+</ul>
